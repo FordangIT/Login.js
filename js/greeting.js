@@ -46,15 +46,15 @@ const USERNAME_KEY = "username";
 function onLoginBtnSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    const userName = loginInput.value;
-    localStorage.setItem(USERNAME_KEY, userName);
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username);
    //greeting.innerText = "Hello " + userName;
-   paintGreetings(userName);
+   paintGreetings(username);
 }
 loginForm.addEventListener("submit", onLoginBtnSubmit)
 
-function paintGreetings(usernammme) {
-    greeting.innerText = `hello ${usernammme}`; 
+function paintGreetings(username) {
+    greeting.innerText = `hello ${username}`; 
     greeting.classList.remove(HIDDEN_CLASSNAME); 
 }
 
