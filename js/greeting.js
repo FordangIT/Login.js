@@ -6,7 +6,7 @@ const loginInput = document.querySelector("#login-form input");
 const loginButton = document.querySelector("#login-form button");
 */
 
-/* 연습 function onLoginBtnClick(){
+ /*연습 function onLoginBtnClick(){
     const userName = loginInput.value;
     if(userName === ""){
         alert("Please Write your name"); 
